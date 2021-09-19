@@ -1,5 +1,5 @@
 # Introduction
-I made this module so that school students can just yoink some of the code for their projects / assigments.
+I made this module so that school students can just yoink some of the code for their projects / assignments.
 They are rather basic projects but that's what we have to do in my school so YES.
 
 # Note
