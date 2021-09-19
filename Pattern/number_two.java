@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-class number_one {
+class number_two {
     // All of the patterns.
-    static void one() {
-        for (int i = 1; i <= 5; i++) {
+    static void one(int limit) {
+        for (int i = 1; i <= limit; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j);
             }
@@ -11,26 +11,26 @@ class number_one {
         }
     }
 
-    static void two() {
-        for (int i = 1; i <= 5; i++) {
-            for (int j = 5; j >= i; j--) {
+    static void two(int limit) {
+        for (int i = 1; i <= limit; i++) {
+            for (int j = limit; j >= i; j--) {
                 System.out.print(j);
             }
             System.out.println();
         }
     }
 
-    static void three() {
-        for (int i = 0; i < 5; i++) {
-            for (int j = 5; j >= 5 - i; j--) {
+    static void three(int limit) {
+        for (int i = 0; i < limit; i++) {
+            for (int j = limit; j >= limit - i; j--) {
                 System.out.print(j);
             }
             System.out.println();
         }
     }
 
-    static void four() {
-        for (int i = 1; i <= 5; i++) {
+    static void four(int limit) {
+        for (int i = 1; i <= limit; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(i);
             }
@@ -38,17 +38,17 @@ class number_one {
         }
     }
 
-    static void five() {
-        for (int i = 1; i <= 5; i++) {
-            for (int j = 1; j <= 6 - i; j++) {
+    static void five(int limit) {
+        for (int i = 1; i <= limit; i++) {
+            for (int j = 1; j <= (limit + 1) - i; j++) {
                 System.out.print(i);
             }
             System.out.println();
         }
     }
 
-    static void six() {
-        for (int i = 5; i >= 1; i--) {
+    static void six(int limit) {
+        for (int i = limit; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(i);
             }
@@ -56,9 +56,9 @@ class number_one {
         }
     }
 
-    static void seven() {
-        for (int i = 5; i >= 1; i--) {
-            for (int j = 1; j <= 6 - i; j++) {
+    static void seven(int limit) {
+        for (int i = limit; i >= 1; i--) {
+            for (int j = 1; j <= (limit + 1) - i; j++) {
                 System.out.print(i);
             }
             System.out.println();
@@ -70,6 +70,10 @@ class number_one {
         // Defining the scanner class to get user input
         Scanner sc = new Scanner(System.in);
 
+        // Getting the number limit
+        System.out.println("Input the pattern number limit.");
+        int limit = sc.nextInt();
+
         // Getting the pattern they wanna see
         System.out.println("Choose the pattern you want. from 1 to x");
         // Storing the user input
@@ -78,31 +82,31 @@ class number_one {
         // Check the option and excuting the corresponding method
         switch (c) {
             case 1:
-                one();
+                one(limit);
                 break;
 
             case 2:
-                two();
+                two(limit);
                 break;
 
             case 3:
-                three();
+                three(limit);
                 break;
 
             case 4:
-                four();
+                four(limit);
                 break;
 
             case 5:
-                five();
+                five(limit);
                 break;
 
             case 6:
-                six();
+                six(limit);
                 break;
 
             case 7:
-                seven();
+                seven(limit);
                 break;
 
             // Invalid choice reply
