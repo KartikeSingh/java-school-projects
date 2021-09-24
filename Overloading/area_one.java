@@ -1,3 +1,4 @@
+// Importing the Scanner class
 public class area_one {
     // Area of circle
     void area(double r) {
