@@ -1,4 +1,4 @@
-public class area {
+public class area_one {
     // Area of circle
     void area(double r) {
         // formula => pie r^2
@@ -28,7 +28,7 @@ public class area {
     }
 
     public static void main(String[] args) {
-        area ob = new area();
+        area_one ob = new area_one();
 
         // area of circle
         ob.area(7.10);
