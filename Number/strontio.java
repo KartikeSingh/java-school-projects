@@ -2,7 +2,7 @@
 // Importing the Scanner class
 import java.util.Scanner;
 
-public class stronghold {
+public class strontio {
     public static void main(String[] args) {
         // Creating the scanner object to get user input
         Scanner sc = new Scanner(System.in);
@@ -16,7 +16,7 @@ public class stronghold {
         int temp = n * 2, tens = 0, hundreds = -1;
 
         // Checking for invalid values
-        while (temp < 1000 || temp > 10000) {
+        while (temp < 1000 || temp > 9999) {
             System.out.println("The number should be a 4 digit number\n\nSo please provided the number again");
             n = sc.nextInt();
             temp = n * 2;
