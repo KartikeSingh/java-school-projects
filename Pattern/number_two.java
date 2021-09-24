@@ -1,3 +1,4 @@
+// Importing the Scanner class
 import java.util.Scanner;
 
 class number_two {
