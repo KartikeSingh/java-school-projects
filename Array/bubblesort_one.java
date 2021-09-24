@@ -4,7 +4,7 @@ import java.util.Scanner;
 class bubblesort_one {
     // The main method
     public static void main(String[] args) {
-        // Creating the scanner object to take unputs
+        // Creating the scanner object to take inputs
         Scanner sc = new Scanner(System.in);
 
         // Asking for the length of the array
