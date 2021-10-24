@@ -3,24 +3,27 @@ class vertical_mirror_matrix {
     public static void main(String[] shit) {
         Scanner sc = new Scanner(System.in);
         int length = 3;
+        String space = " ";
+        space = space.repeat(length * 2 - 1);
+
         // Defining an empty matrix / 2d array
         int[][] ar = new int[length][length]; 
         int[][] ar2 = new int[length][length]; 
  
-        System.out.println("Input the 9 elements of the matrix.");
+        System.out.println("Input the " + length * length + " elements of the matrix.");
 
         // Taking user input for filling the 2d array
         for(int i = 0; i < length; i++) {
             for(int j = 0; j < length; j++) {
                 ar[i][j] = sc.nextInt();
 
-                int I = i == 0 ? 2 : i == 2 ? 0 : i;
+                int I = i == length / 2 ? i : i >= length / 2 ? ( i / 2 )  - 1 : length - i - 1;
                 ar2[I][j] = ar[i][j];
             }   
         }
 
         // Printing the provided matrix
-        System.out.println(" _      _");
+        System.out.println(" _" + space + "_");
         for(int i = 0; i < length; i++) {
             System.out.print("| ");
             for(int j = 0; j < length; j++) {
@@ -29,10 +32,10 @@ class vertical_mirror_matrix {
             System.out.print(" |");
             System.out.println();
         }
-        System.out.println(" _      _\n");
+        System.out.println(" _" + space + "_\n");
 
         // Printing the mirror matrix
-        System.out.println(" _      _");
+        System.out.println(" _" + space + "_");
         for(int i = 0; i < length; i++) {
             System.out.print("| ");
             for(int j = 0; j < length; j++) {
@@ -41,6 +44,6 @@ class vertical_mirror_matrix {
             System.out.print(" |");
             System.out.println();
         }
-        System.out.println(" _      _\n");
+        System.out.println(" _" + space + "_\n");
     }
 }
