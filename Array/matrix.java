@@ -3,6 +3,9 @@ class matrix {
     public static void main(String[] shit) {
         Scanner sc = new Scanner(System.in);
         int length = 3;
+        String space = " ";
+        space = space.repeat(length * 2 - 1);
+        
         // Defining an empty matrix / 2d array
         int[][] ar= new int[length][length]; 
         // Defining an 2d array with values
@@ -18,7 +21,7 @@ class matrix {
         }
 
         // Printing the matrix :D
-        System.out.println(" _      _");
+        System.out.println(" _" + space + "_");
         for(int i = 0; i < length; i++) {
             System.out.print("| ");
             for(int j = 0; j < length; j++) {
@@ -27,6 +30,6 @@ class matrix {
             System.out.print(" |");
             System.out.println();
         }
-        System.out.print(" _      _");
+        System.out.print(" _" + space + "_");
     }
 }
