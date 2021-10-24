@@ -4,7 +4,7 @@ class horizontal_mirror_matrix {
         Scanner sc = new Scanner(System.in);
         int length = 3;
         String space = " ";
-        space = space.repeat(length * 2 - 1);
+        space = space.repeat(length * 2 - 2);
 
         // Defining an empty matrix / 2d array
         int[][] ar = new int[length][length]; 
@@ -23,7 +23,14 @@ class horizontal_mirror_matrix {
         }
 
         // Printing the provided matrix
-        System.out.println(" _      _");
+        printMatrix(ar, length, space);
+
+        // Printing the mirror matrix
+        printMatrix(ar2, length, space);
+    }
+
+    public static void printMatrix(int[][] ar, int length, String space) {
+        System.out.println(" --" + space + "--");
         for(int i = 0; i < length; i++) {
             System.out.print("| ");
             for(int j = 0; j < length; j++) {
@@ -32,18 +39,6 @@ class horizontal_mirror_matrix {
             System.out.print(" |");
             System.out.println();
         }
-        System.out.println(" _      _\n");
-
-        // Printing the mirror matrix
-        System.out.println(" _      _");
-        for(int i = 0; i < length; i++) {
-            System.out.print("| ");
-            for(int j = 0; j < length; j++) {
-                System.out.print(ar2[i][j]+" ");
-            }   
-            System.out.print(" |");
-            System.out.println();
-        }
-        System.out.println(" _      _\n");
+        System.out.println(" --" + space + "--");
     }
 }

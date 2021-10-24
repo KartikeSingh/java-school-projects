@@ -4,7 +4,7 @@ class matrix {
         Scanner sc = new Scanner(System.in);
         int length = 3;
         String space = " ";
-        space = space.repeat(length * 2 - 1);
+        space = space.repeat(length * 2 - 2);
         
         // Defining an empty matrix / 2d array
         int[][] ar= new int[length][length]; 
@@ -20,7 +20,10 @@ class matrix {
             }   
         }
 
-        // Printing the matrix :D
+        printMatrix(ar, length, space);
+    }
+
+    public static void printMatrix(int[][] ar, int length, String space) {
         System.out.println(" _" + space + "_");
         for(int i = 0; i < length; i++) {
             System.out.print("| ");
@@ -30,6 +33,6 @@ class matrix {
             System.out.print(" |");
             System.out.println();
         }
-        System.out.print(" _" + space + "_");
+        System.out.println(" _" + space + "_");
     }
 }
