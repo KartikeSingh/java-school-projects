@@ -9,7 +9,7 @@ class matrix {
         // Defining an empty matrix / 2d array
         int[][] ar= new int[length][length]; 
         // Defining an 2d array with values
-        int[][] arr= { {1, 2, 3}, {2, 3, 4}, {0, 9, 8} };
+        int[][] arr= {{1, 2, 3}, {2, 3, 4}, {0, 9, 8}};
 
         System.out.println("Input the 9 elements of the matrix.");
 
@@ -30,7 +30,7 @@ class matrix {
             for(int j = 0; j < length; j++) {
                 System.out.print(ar[i][j]+" ");
             }   
-            System.out.print(" |");
+            System.out.print("|");
             System.out.println();
         }
         System.out.println(" _" + space + "_");
