@@ -16,13 +16,6 @@ public class Armstrong {
         // Declaring the required variables
         int temp = n, product = 0;
 
-        // Checking for invalid values
-        while (temp < 100 || temp > 999) {
-            System.out.println("The number should be a 4 digit number\n\nSo please provided the number again");
-            n = sc.nextInt();
-            temp = n * 2;
-        }
-
         // Getting the product of the digits
         while (temp > 0) {
             int d = temp % 10;
@@ -38,3 +31,6 @@ public class Armstrong {
             System.out.println(n + " is not a Armstrong number");
     }
 }
+
+// Armstrong number is a four digit number, such number's digits cube's sum is equal to the number itself
+// example 153
