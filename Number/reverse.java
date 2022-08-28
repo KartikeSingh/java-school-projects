@@ -1,4 +1,4 @@
-// Importing the Scanner class
+        // Importing the Scanner class
 import java.util.Scanner;
 
 public class reverse {

@@ -6,7 +6,7 @@ class piglatin {
         // Defining the scanner class to get user input
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Input the string to check if it is a Pig Latin word.");
+        System.out.println("Input the string to convert it to it's Pig Latin form.");
         // Storing the user input
         String word = sc.next();
         int i = 0;
